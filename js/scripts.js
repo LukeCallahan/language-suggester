@@ -8,7 +8,15 @@ window.addEventListener("load", function() {
     document.getElementById("miracles").setAttribute("class", "hidden");
     document.getElementById("cuddlier").setAttribute("class", "hidden");
     document.getElementById("beverage").setAttribute("class", "hidden");
+    const yearField = document.getElementById("years");
+    yearField.value = '';
   }
+  function resetFormFields(){
+    const yearField = document.getElementById("years");
+    yearField.value = '';
+  }
+
+
   function whatsYourLanguage(){
     //establish variables for the values of each input
     const years = parseInt(document.querySelector("input#years").value);
@@ -41,5 +49,6 @@ window.addEventListener("load", function() {
     setToHidden();
     whatsYourLanguage();
     form.reset();
+    resetFormFields();
   })
 })
