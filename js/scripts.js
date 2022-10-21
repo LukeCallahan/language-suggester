@@ -8,11 +8,11 @@ window.addEventListener("load", function() {
     document.getElementById("miracles").setAttribute("class", "hidden");
     document.getElementById("cuddlier").setAttribute("class", "hidden");
     document.getElementById("beverage").setAttribute("class", "hidden");
-    const yearField = document.getElementById("years");
-    yearField.value = '';
   }
   function resetFormFields(){
-    const yearField = document.getElementById("years");
+    //here's your problem
+    const yearField = document.querySelector("input#years");
+    console.log("year Field" + yearField);
     yearField.value = '';
   }
 
