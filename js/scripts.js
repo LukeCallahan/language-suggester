@@ -26,7 +26,7 @@ window.addEventListener("load", function() {
     console.log(yourScore);
     if (yourScore > 100){
       document.getElementById("python").removeAttribute("class");
-    } else if (yourScore >= 25 && <= 100) {
+    } else if (yourScore >= 25 <= 100) {
       document.getElementById("ruby").removeAttribute("class");
     } else if (yourScore <=25) {
       document.getElementById("rust").removeAttribute("class");
