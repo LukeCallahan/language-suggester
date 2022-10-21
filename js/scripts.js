@@ -13,13 +13,13 @@ window.addEventListener("load", function() {
     //establish variables for the values of each input
     const years = parseInt(document.querySelector("input#years").value);
     console.log('years ' + years);
-    const petWeight = parseInt(document.querySelector("input#pet-weight"));
+    const petWeight = parseInt(document.querySelector("input#pet-weight").value);
     console.log('petWeight' + petWeight);
-    const miracles = parseInt(document.querySelector("input#miracles"));
+    const miracles = parseInt(document.querySelector("input#miracles").value);
     console.log('miracles' + miracles);
-    const cuddlier = parseInt(document.querySelector("input#cuddlier"));
+    const cuddlier = parseInt(document.querySelector("input#cuddlier").value);
     console.log('cuddlier '+ cuddlier);
-    const beverage = parseInt(document.querySelector("input#beverage"));
+    const beverage = parseInt(document.querySelector("input#beverage").value);
     console.log('beverage' + beverage);
 
     const yourScore = years + petWeight + miracles + cuddlier + beverage;
