@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/scripts.js"></script>
   <title>Language Suggester</title>
@@ -15,31 +15,40 @@
 
     <p>We're here to check your tires, your arorua borealis, and your ancestral past to determine which new age computer language is written in your stars'!</p>
     
-    <form id="userInfo">
+    <form id="userInfo" class="form-check border rounded card" >
       
       <p id="error-message" class="hidden">Please enter numbers for your age</p>
-      <label for="years">How many years do you have?</label>
-      <input id="years" type="text"><br>
-      <label for="pet-weight">How many milligrams does your lightest pet weigh?</label>
-      <input id="pet-weight" type="text"><br>
-      <label for="miracles">If you were a hot dog, would you eat yourself?</label>
-      <input id="miracles" type="radio" name="miracles" value="10">
-      <label for="miracles">yes, defintely, I'd slather myself with ketchup and mustard and I'd be delicious.</label>
-      <input id="miracles" type="radio" name ="miracles" value="1">
-      <label for="miracles">no, decidedly not.</label>
-      <br>
-      <label for="cuddlier">Which is cuddlier? Birds or snakes?</label>
-      <input id="cuddlier" type="radio" name="cuddle" value="10">
-      <label for="cuddlier">Boids for sure</label>
-      <input id="cuddlier" type="radio" name="cuddle" value="1">
-      <label for="cuddlier">Thhhhnakes definitely</label><br>
-      
-      <label for="beverage">Coffee or tea?</label>
-      <input id="beverage" type="radio" name="bev"  type="text" value ="10">
-      <label for="beverage">COFFEE MUST HAVE</label>
-      <input id="beverage" type="radio" name="bev" type="text" value ="1">
-      <label for="beverage">ah yes, tea is delightful</label><br>
-      <button type="submit">Show me what language is best for me</button>
+      <div class="form-group">
+        <label for="years">How many years do you have?</label>
+        <input id="years" type="text"><br>
+      </div>
+        <div class="form-group">
+          <label for="pet-weight">How many milligrams does your lightest pet weigh?</label>
+          <input id="pet-weight" type="text"><br>
+        </div>
+        <div class="form-check">
+          <label for="miracles">If you were a hot dog, would you eat yourself?</label><br>
+          <input class="form-check-input" id="miracles" type="radio" name="miracles" value="10" checked>
+          <label class="form-check-label" for="miracles">yes, defintely, I'd slather myself with ketchup and mustard and I'd be delicious.</label>
+          <input class="form-check-input" id="miracles" type="radio" name ="miracles" value="1"><br>
+          <label class="form-check-label" for="miracles">no, decidedly not.</label>
+        </div>
+        <br>
+        <div class="form-check">
+          <label for="cuddlier">Which is cuddlier? Birds or snakes?</label>
+          <input id="cuddlier" type="radio" name="cuddle" value="10">
+          <label for="cuddlier">Boids for sure</label>
+          <input id="cuddlier" type="radio" name="cuddle" value="1">
+          <label for="cuddlier">Thhhhnakes definitely</label><br>
+        </div>
+        <div class="form-check">
+          <label for="beverage">Coffee or tea?</label>
+          <input id="beverage" type="radio" name="bev"  type="text" value ="10">
+          <label for="beverage">COFFEE MUST HAVE</label>
+          <input id="beverage" type="radio" name="bev" type="text" value ="1">
+          <label for="beverage">ah yes, tea is delightful</label><br>
+        </div>
+        <button type="submit">Show me what language is best for me</button>
 
       
     <div id="python" class="hidden">
