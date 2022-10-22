@@ -10,11 +10,14 @@
   <title>Language Suggester</title>
 </head>
 <body>
-  <div>
+  <div class="container">
     <div class="jumbotron bg-info">
       <h1>WHICH PROGRAMMING LANGUAGE SUITS YOU BEST?</h1>
     </div>
-    <p>We're here to check your tires, your arorua borealis, and your ancestral past to determine which new age computer language is written in your stars'!</p>
+   
+    <div class="box">
+      <p>We're here to check your tires, your auorora borealis, and your ancestral past to determine which new age computer language is written in your stars'!</p>
+    </div>
     <form id="userInfo" class="form-check border rounded card bg-light" >
       
       <p id="error-message" class="hidden">Please enter numbers for your age</p>
@@ -30,36 +33,37 @@
       <div class="form-check">
         <label for="miracles">3. If you were a hot dog, would you eat yourself?</label><br>
         <div class="custom-control custom-radio">
-        <label class="custom-control-label" for="customRadio1">yes, defintely, I'd slather myself with ketchup and mustard and I'd be delicious.</label>
         <input class="custom-control-input" id="customRadio1" type="radio" name="miracles" value="10" >
+        <label class="custom-control-label" for="customRadio1">yes, defintely, I'd slather myself with ketchup and mustard and I'd be delicious.</label>
         </div>
       <div class="custom-control custom-radio">
-        <label class="custom-control-label" for="customRadio2">no, decidedly not.</label>
         <input class="custom-control-input" id="customRadio2" type="radio"  name="miracles"  value="1"><br>
+        <label class="custom-control-label" for="customRadio2">no, decidedly not.</label>
       </div>
     </div>
       <div class="form-check">
         <label for="cuddlier">4. Which is cuddlier? Birds or snakes?</label>
         <div class="custom-control custom-radio">
-          <label class="custom-control-label" for="customRadio3">Boids for sure</label>
           <input class="custom-control-input" id="customRadio3" type="radio"   name="cuddle" value="10">
+          <label class="custom-control-label" for="customRadio3">Boids for sure</label>
         </div>
         <div class="custom-control custom-radio">
-          <label class="custom-control-label" for="customRadio4">Thhhhnakes definitely</label><br>
           <input class="custom-control-input" id="customRadio4" type="radio" name="cuddle" value="1">
+          <label class="custom-control-label" for="customRadio4">Thhhhnakes definitely</label><br>
         </div>
       </div>
       <div class="form-check">
         <label for="beverage">5. Coffee or tea?</label>
         <div class="custom-control custom-radio">
+          <input class="custom-control-input" id="customRadio5" type="radio" name="bev"  type="radio" value ="10">
           <label class="custom-control-label" for="customRadio5">COFFEE MUST HAVE</label>
-          <input class="custom-control-input" id="customRadio5" type="radio" name="bev"  type="text" value ="10">
           </div>
         <div class="custom-control custom-radio">
+          <input class="custom-control-input" id="customRadio6" type="radio" name="bev" type="radio" value ="1">
           <label class="custom-control-label" for="customRadio6">ah yes, tea is delightful</label><br>
-          <input class="custom-control-input" id="customRadio6" type="radio" name="bev" type="text" value ="1">
         </div>
       </div>
+      
       <button class="btn btn-primary" type="submit">Show me what language is best for me</button>
 
       
