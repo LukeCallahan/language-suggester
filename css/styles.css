@@ -1,3 +1,29 @@
 .hidden {
   display: none;
 }
+
+body {
+  background-color: black;
+}
+
+h2 {
+  color:aliceblue;
+  background-color: black;
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  
+}
+
+p {
+  text-align: justify;
+
+}
+
+label {
+  display: block;
+  text-indent: 4%;
+  width: 500px;
+  clear: left;
+}
