@@ -14,6 +14,14 @@ h2 {
   text-align: center;
   font-family: "Lucida Console", "Courier New", monospace;
 }
+h1{
+  color:aliceblue;
+  background-color: black;
+  border-radius: 10px;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
 
 p {
   text-align: justify;
@@ -24,6 +32,15 @@ label {
   text-indent: 4%;
   width: 500px;
   clear: left;
+}
+.form-check { 
+  padding: 20px;
+
+}
+
+.btn {
+  background-color: black;
+
 }
 
 .box{

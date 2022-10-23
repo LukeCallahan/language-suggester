@@ -25,6 +25,9 @@
 ## Known Bugs
 
 * _Text Fields are not currently resetting upon form submission_
+* _Formatting of text input fields can be improved_
+* _remove bottom div before form is submitted_
+* _allow radio buttons to be operated after form is submitted_
 
 ## Future Ideas
 
