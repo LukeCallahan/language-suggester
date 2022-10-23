@@ -11,78 +11,87 @@
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron bg-info">
+    <div class="box bg-info">
       <h2>WHICH PROGRAMMING LANGUAGE SUITS YOU BEST?</h2>
       <p>We're here to check your tires, your auorora borealis, and your ancestral past to determine which new age computer language is written in your stars'!</p>
-    </div>
-    <form id="userInfo" class="form-check border rounded card bg-light" >
+    </div> 
+    <div class="box bg-info">
+      <form id="userInfo" class="form-check border rounded card bg-info" >
+        <h2 id="error-message" class="hidden">Please enter numbers for your age</h2>
       
-
-      <h2 id="error-message" class="hidden">Please enter numbers for your age</h2>
+        <h2> QUESTION 1</h2>
+        <div class="form-check">
+          <label>
+            How many years do you have?<br>
+            <input class="form-check-input"id="years" type="number" placeholder="enter your age"><br>
+          </label>
+        </div>
+        <h2> QUESTION 2</h2>
+        <div class="form-check">
       
-      <h2> QUESTION 1</h2>
-      <div class="form-check">
-        <label>
-          1. How many years do you have?<br>
-          <input class="form-check-input"id="years" type="number" placeholder="enter your age"><br>
-        </label>  
-      </div>
-      <div class="form-check">
-        <label class="form-check-label" for="">2. How many milligrams does your lightest pet weigh?</label>
-        <input class="form-check-input" id="" placeholder="enter your pet's weight" type="text"><br>
-      </div>
-      <div class="form-check">
-        <label for="miracles">3. If you were a hot dog, would you eat yourself?</label><br>
-        <div class="custom-control custom-radio">
-        <input class="custom-control-input" id="customRadio1" type="radio" name="miracles" value="10" >
-        <label class="custom-control-label" for="customRadio1">yes, defintely, I'd slather myself with ketchup and mustard and I'd be delicious.</label>
+          <label class="form-check-label" for="">How many milligrams does your lightest pet weigh?</label>
+          <input class="form-check-input" id="pet-weight" placeholder="enter your pet's weight" type="number"><br>
         </div>
-      <div class="custom-control custom-radio">
-        <input class="custom-control-input" id="customRadio2" type="radio"  name="miracles"  value="1"><br>
-        <label class="custom-control-label" for="customRadio2">no, decidedly not.</label>
-      </div>
-    </div>
-      <div class="form-check">
-        <label for="cuddlier">4. Which is cuddlier? Birds or snakes?</label>
-        <div class="custom-control custom-radio">
-          <input class="custom-control-input" id="customRadio3" type="radio"   name="cuddle" value="10">
-          <label class="custom-control-label" for="customRadio3">Boids for sure</label>
-        </div>
-        <div class="custom-control custom-radio">
-          <input class="custom-control-input" id="customRadio4" type="radio" name="cuddle" value="1">
-          <label class="custom-control-label" for="customRadio4">Thhhhnakes definitely</label><br>
-        </div>
-      </div>
-      <div class="form-check">
-        <label for="beverage">5. Coffee or tea?</label>
-        <div class="custom-control custom-radio">
-          <input class="custom-control-input" id="customRadio5" type="radio" name="bev"  type="radio" value ="10">
-          <label class="custom-control-label" for="customRadio5">COFFEE MUST HAVE</label>
+        <h2> QUESTION 3</h2>
+        <div class="form-check">
+          <label for="miracles">If you were a hot dog, would you eat yourself?</label>
+          <div class="custom-control custom-radio">
+          <input class="custom-control-input" id="miracles" type="radio" name="miracles" value="10" >
+          <label class="custom-control-label" for="miracles">yes, defintely, I'd slather myself with ketchup and mustard and I'd be delicious.</label>
           </div>
         <div class="custom-control custom-radio">
-          <input class="custom-control-input" id="customRadio6" type="radio" name="bev" type="radio" value ="1">
-          <label class="custom-control-label" for="customRadio6">ah yes, tea is delightful</label><br>
+          <input class="custom-control-input" id="miracles1" type="radio"  name="miracles"  value="1">
+          <label class="custom-control-label" for="miracles1">no, decidedly not.</label>
         </div>
       </div>
+      <h2> QUESTION 4</h2>
+        <div class="form-check">
+          <label for="cuddlier">Which is cuddlier? Birds or snakes?</label>
+          <div class="custom-control custom-radio">
+            <input class="custom-control-input" id="cuddlier" type="radio"   name="cuddle" value="10">
+            <label class="custom-control-label" for="cuddlier">Boids for sure</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input class="custom-control-input" id="customRadio4" type="radio" name="cuddle" value="1">
+            <label class="custom-control-label" for="customRadio4">Thhhhnakes definitely</label><br>
+          </div>
+        </div>
+        <h2> QUESTION 5</h2>
+        <div class="form-check">
+          <label for="beverage">Coffee or tea?</label>
+          <div class="custom-control custom-radio">
+            <input class="custom-control-input" id="beverage" type="radio" name="bev"  type="radio" value ="10">
+            <label class="custom-control-label" for="beverage">COFFEE MUST HAVE</label>
+            </div>
+          <div class="custom-control custom-radio">
+            <input class="custom-control-input" id="beverage" type="radio" name="bev" type="radio" value ="1">
+            <label class="custom-control-label" for="beverage">ah yes, tea is delightful</label><br>
+          </div>
+        </div>
       
-      <button class="btn btn-primary" type="submit">Show me what language is best for me</button>
-
-      
-    <div id="python" class="hidden">
-      <h1>Python</h1>
-      <p>You treat everything as an object you snake charmin' son of a gun. The era for your type is over in so many ways, but you're lucky this language is in vogue and only getting better.</p> 
+        <button class="btn btn-primary" type="submit">Show me what language is best for me</button>
+      </form>
     </div>
-    <div id="ruby" class="hidden">
-      <h1>Ruby</h1>
-      <p>The sparkly things catch your eye, and rightfully so, this language is perfect for getting started in the beautiful world of learning to write software.</p> 
+    <div class="box">
+      <h2>YOUR PERFECT PROGRAMMING LANGUAGE</h2>
+      <div id= class="box bg-info">
+        <div id="python" class="hidden">
+          <h2>Python</h2>
+          <p>You treat everything as an object you snake charmin' son of a gun. The era for your type is over in so many ways, but you're lucky this language is in vogue and only getting better.</p>
+        </div>
+        <div id="ruby" class="hidden">
+          <h2>Ruby</h2>
+          <p>The sparkly things catch your eye, and rightfully so, this language is perfect for getting started in the beautiful world of learning to write software.</p>
+        </div>
+        <div id="rust" class="hidden">
+          <h2>Rust</h2>
+          <p>Performance is all you care about, and surely what you'll be mastering with this language.</p>
+        </div>
+        <div id="no-language" class="hidden">
+          <h1>That's not a language... </h1>
+          <p>This is a language!</p>
+        </div>
     </div>
-    <div id="rust" class="hidden">
-      <h1>Rust</h1>
-      <p>Performance is all you care about, and surely what you'll be mastering with this language.</p> 
-    </div>
-    <div id="no-language" class="hidden">
-      <h1>That's not a language... </h1>
-      <p>This is a language!</p> 
     </div>
   </div>
   

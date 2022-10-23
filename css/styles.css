@@ -13,12 +13,10 @@ h2 {
   font-size: 30px;
   text-align: center;
   font-family: "Lucida Console", "Courier New", monospace;
-  
 }
 
 p {
   text-align: justify;
-
 }
 
 label {
@@ -26,4 +24,14 @@ label {
   text-indent: 4%;
   width: 500px;
   clear: left;
+}
+
+.box{
+  border-radius: 15px;  
+  color: black;
+  background-color: #17a2b8;
+  padding: 4%;
+  margin: 5%;
+  box-sizing: border-box;
+  font-weight: 300;
 }
