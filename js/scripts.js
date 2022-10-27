@@ -12,12 +12,12 @@ window.addEventListener("load", function() {
   function resetFormFields(){
     //here's your problem
     const yearField = document.querySelector("input#years");
-    yearField.value = '';
+   
   }
   function whatsYourLanguage(){
     //establish variables for the values of each input
-    const years = parseInt(document.querySelector("input#years").value);
-    const petWeight = parseInt(document.querySelector("input#pet-weight").value);
+    const years = parseInt(document.getElementById("years").value);
+    const petWeight = parseInt(document.getElementById("pet-weight").value);
     const miracles = parseInt(document.querySelector("input[name='miracles']:checked").value);
     const cuddlier = parseInt(document.querySelector("input[name='cuddle']:checked").value);
     const beverage = parseInt(document.querySelector("input[name='bev']:checked").value);

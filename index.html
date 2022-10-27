@@ -17,23 +17,32 @@
     </div> 
     <div class="box bg-info">
       <form id="userInfo" class="form-check border rounded card bg-info" >
-        <h2 id="error-message" class="hidden">Please enter numbers for your age</h2>
-      
+        <h2 id="error-message" class="hidden">How old are you?</h2>
         <h2> QUESTION 1</h2>
-        <div class="form-check" id="years1">
-          <label>
-            How many years do you have?<br>
-            <input class="form-check-input" id="years" type="number" placeholder="enter your age"><br>
-          </label>
+        <div class="form-check" id="years">
+          <h4>How old are you?</h4>
+          <select id="years">
+            <option value="1">0-10</option>
+            <option value="2">11-20</option>
+            <option value="10">21-30</option>
+            <option value="15">31 or older</option>
+          </select>
+          
         </div>
         <h2> QUESTION 2</h2>
         <div class="form-check">
-          <label class="form-check-label" for="pet-weight">How many milligrams does your lightest pet weigh?</label>
-          <input class="form-check-input" id="pet-weight" placeholder="enter your pet's weight" type="number"><br>
+          <h4>How much does your pet weigh?</h4>
+          <select id="pet-weight">
+            <option value="1">under 5 pounds</option>
+            <option value="3">5-10 pounds</option>
+            <option value="7">10-50 pounds</option>
+            <option value="9">must be more than 50 because I can't pick them up.</option>
+            
+          </select>
         </div>
         <h2> QUESTION 3</h2>
         <div class="form-check">
-          <label for="miracles">If you were a hot dog, would you eat yourself?</label>
+          <label for="miracles"><h4>If you were a hot dog, would you eat yourself?</h4></label>
           <div class="custom-control custom-radio">
             <input class="custom-control-input" id="miracles" type="radio" name="miracles" value="10" checked>
             <label class="custom-control-label" for="miracles">yes, defintely, I'd slather myself with ketchup and mustard and I'd be delicious.</label>
@@ -46,7 +55,7 @@
       
         <h2> QUESTION 4</h2>
         <div class="form-check">
-          <label for="cuddlier">Which is cuddlier? Birds or snakes?</label>
+          <label for="cuddlier"><h4>Which is cuddlier? Birds or snakes?</h4></label>
           <div class="custom-control custom-radio">
             <input class="custom-control-input" id="cuddlier" type="radio"   name="cuddle" value="10" checked>
             <label class="custom-control-label" for="cuddlier">Boids for sure</label>
@@ -58,7 +67,7 @@
         </div>
         <h2> QUESTION 5</h2>
         <div class="form-check">
-          <label for="beverage">Coffee or tea?</label>
+          <label for="beverage"><h4>Coffee or tea?</h4></label>
           <div class="custom-control custom-radio">
             <input class="custom-control-input" id="coffee" type="radio" name="bev"  type="radio" value="10" checked>
             <label class="custom-control-label" for="coffee">COFFEE MUST HAVE</label>
