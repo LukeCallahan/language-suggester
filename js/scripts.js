@@ -3,38 +3,29 @@
 //function to hide the divs
 window.addEventListener("load", function() {
   function setToHidden(){
-    document.getElementById("years").setAttribute("class", "hidden");
+    document.getElementById("years1").setAttribute("class", "hidden");
     document.getElementById("pet-weight").setAttribute("class", "hidden");
     document.getElementById("miracles").setAttribute("class", "hidden");
     document.getElementById("cuddlier").setAttribute("class", "hidden");
-    document.getElementById("beverage").setAttribute("class", "hidden");
+    document.getElementById("coffee").setAttribute("class", "hidden");
   }
   function resetFormFields(){
     //here's your problem
     const yearField = document.querySelector("input#years");
-    console.log("year Field" + yearField);
     yearField.value = '';
   }
-
-
   function whatsYourLanguage(){
     //establish variables for the values of each input
     const years = parseInt(document.querySelector("input#years").value);
-    console.log('years ' + years);
     const petWeight = parseInt(document.querySelector("input#pet-weight").value);
-    console.log('petWeight' + petWeight);
     const miracles = parseInt(document.querySelector("input#miracles").value);
-    console.log('miracles' + miracles);
     const cuddlier = parseInt(document.querySelector("input#cuddlier").value);
-    console.log('cuddlier '+ cuddlier);
-    const beverage = parseInt(document.querySelector("input#beverage").value);
-    console.log('beverage' + beverage);
-
+    const beverage = parseInt(document.querySelector("input#coffee").value);
     const yourScore = years + petWeight + miracles + cuddlier + beverage;
     console.log(yourScore);
     if (yourScore > 100){
       document.getElementById("python").removeAttribute("class");
-    } else if (yourScore >= 25 <= 100) {
+    } else if ((yourScore >= 25) && (yourScore <= 100)) {
       document.getElementById("ruby").removeAttribute("class");
     } else if (yourScore <=25) {
       document.getElementById("rust").removeAttribute("class");
