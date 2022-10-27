@@ -18,11 +18,12 @@ window.addEventListener("load", function() {
     //establish variables for the values of each input
     const years = parseInt(document.querySelector("input#years").value);
     const petWeight = parseInt(document.querySelector("input#pet-weight").value);
-    const miracles = parseInt(document.querySelector("input#miracles").value);
-    const cuddlier = parseInt(document.querySelector("input#cuddlier").value);
-    const beverage = parseInt(document.querySelector("input#coffee").value);
-    const yourScore = years + petWeight + miracles + cuddlier + beverage;
-    console.log(yourScore);
+    const miracles = parseInt(document.querySelector("input[name='miracles']:checked").value);
+    const cuddlier = parseInt(document.querySelector("input[name='cuddle']:checked").value);
+    const beverage = parseInt(document.querySelector("input[name='bev']:checked").value);
+    const yourScore = parseInt(years + petWeight + miracles + cuddlier + beverage);
+
+    console.log("your score" + yourScore);
     if (yourScore > 100){
       document.getElementById("python").removeAttribute("class");
     } else if ((yourScore >= 25) && (yourScore <= 100)) {
