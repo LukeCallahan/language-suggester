@@ -17,18 +17,13 @@ function whatsYourLanguage(){
   const beverage = parseInt(document.querySelector("input[name='bev']:checked").value);
   const yourScore = parseInt(years + petWeight + miracles + cuddlier + beverage);
   
-  console.log(years);
-  console.log("pet weight" + petWeight);
-  console.log(miracles);
-  console.log(cuddlier);
-  console.log(beverage);
   console.log("your score" + yourScore);
   console.log(yourScore.typeOf);
-  if (yourScore > 100){
+  if (yourScore > 40){
     document.getElementById("python").removeAttribute("class");
-  } else if ((yourScore >= 25) && (yourScore <= 100)) {
+  } else if ((yourScore >= 20) && (yourScore <= 40)) {
     document.getElementById("ruby").removeAttribute("class");
-  } else if (yourScore <=25) {
+  } else if (yourScore <= 20) {
     document.getElementById("rust").removeAttribute("class");
   } else {
     document.getElementById("no-language").removeAttribute("class");
