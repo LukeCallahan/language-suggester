@@ -1,118 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <script src="js/scripts.js"></script>
-  <title>Language Suggester</title>
-</head>
-<body>
-  <div class="container">
-    <div class="box bg-info">
-      <h2>WHICH PROGRAMMING LANGUAGE SUITS YOU BEST?</h2>
-      <p>We're here to check your tires, your auorora borealis, and your ancestral past to determine which new age computer language is written in your stars'!</p>
-    </div> 
-    <div class="box bg-info">
-      <form id="userInfo" class="form-check border rounded card bg-info" >
-        <h2 id="error-message" class="hidden">How old are you?</h2>
-        <h2> QUESTION 1</h2>
-        <div class="form-check">
-          <h4>How old are you?</h4>
-          <select id="years">
-            <option value="1">0-10</option>
-            <option value="2">11-20</option>
-            <option value="10">21-30</option>
-            <option value="15">31 or older</option>
-          </select>
-          
-        </div>
-        <h2> QUESTION 2</h2>
-        <div class="form-check">
-          <h4>How much does your pet weigh?</h4>
-          <select id="pet-weight">
-            <option value="1">under 5 pounds</option>
-            <option value="3">5-10 pounds</option>
-            <option value="7">10-50 pounds</option>
-            <option value="9">must be more than 50 because I can't pick them up.</option>
-            
-          </select>
-        </div>
-        <h2> QUESTION 3</h2>
-        <div class="form-check">
-          <label for="miracles"><h4>If you were a hot dog, would you eat yourself?</h4></label>
-          <div class="custom-control custom-radio">
-            <input class="custom-control-input" id="miracles" type="radio" name="miracles" value="10" checked>
-            <label class="custom-control-label" for="miracles">yes, defintely, I'd slather myself with ketchup and mustard and I'd be delicious.</label>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/scripts.js"></script>
+    <title>Language Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box bg-info">
+        <h2>WHICH PROGRAMMING LANGUAGE SUITS YOU BEST?</h2>
+        <p>We're here to check your tires, your auorora borealis, and your ancestral past to determine which new age computer language is written in your stars'!</p>
+      </div> 
+      <div class="box bg-info">
+        <form id="userInfo" class="form-check border rounded card bg-info" >
+          <h2 id="error-message" class="hidden">How old are you?</h2>
+          <h2> QUESTION 1</h2>
+          <div class="form-check">
+            <h4>How old are you?</h4>
+            <select id="years">
+              <option value="1">0-10</option>
+              <option value="2">11-20</option>
+              <option value="10">21-30</option>
+              <option value="15">31 or older</option>
+            </select>
           </div>
-          <div class="custom-control custom-radio">
-            <input class="custom-control-input" id="miracles1" type="radio"  name="miracles"  value="1" checked>
-            <label class="custom-control-label" for="miracles1">no, decidedly not.</label>
-          </div>  
-        </div>
-      
-        <h2> QUESTION 4</h2>
-        <div class="form-check">
-          <label for="cuddlier"><h4>Which is cuddlier? Birds or snakes?</h4></label>
-          <div class="custom-control custom-radio">
-            <input class="custom-control-input" id="cuddlier" type="radio"   name="cuddle" value="10" checked>
-            <label class="custom-control-label" for="cuddlier">Boids for sure</label>
+          <h2> QUESTION 2</h2>
+          <div class="form-check">
+            <h4>How much does your pet weigh?</h4>
+            <select id="pet-weight">
+              <option value="1">under 5 pounds</option>
+              <option value="3">5-10 pounds</option>
+              <option value="7">10-50 pounds</option>
+              <option value="9">must be more than 50 because I can't pick them up.</option> 
+            </select>
           </div>
-          <div class="custom-control custom-radio">
-            <input class="custom-control-input" id="customRadio4" type="radio" name="cuddle" value="1">
-            <label class="custom-control-label" for="customRadio4">Thhhhnakes definitely</label><br>
-          </div>
-        </div>
-        <h2> QUESTION 5</h2>
-        <div class="form-check">
-          <label for="beverage"><h4>Coffee or tea?</h4></label>
-          <div class="custom-control custom-radio">
-            <input class="custom-control-input" id="coffee" type="radio" name="bev"  type="radio" value="10" checked>
-            <label class="custom-control-label" for="coffee">COFFEE MUST HAVE</label>
+          <h2> QUESTION 3</h2>
+          <div class="form-check">
+            <label for="miracles"><h4>If you were a hot dog, would you eat yourself?</h4></label>
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" id="miracles" type="radio" name="miracles" value="10" checked>
+              <label class="custom-control-label" for="miracles">yes, defintely, I'd slather myself with ketchup and mustard and I'd be delicious.</label>
             </div>
-          <div class="custom-control custom-radio">
-            <input class="custom-control-input" id="tea" type="radio" name="bev" type="radio" value="1">
-            <label class="custom-control-label" for="tea">ah yes, tea is delightful</label><br>
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" id="miracles1" type="radio"  name="miracles"  value="1">
+              <label class="custom-control-label" for="miracles1">no, decidedly not.</label>
+            </div>  
           </div>
-        </div>
-      
-        <button class="btn btn-primary" type="submit">Show me what language is best for me</button>
-      </form>
-    </div>  
-    </div>
-    <div id="python" class="hidden">
-      <div class="box"> 
-        <h2>YOUR PERFECT PROGRAMMING LANGUAGE</h2>
-        <h1>Python</h1>
-        <p>You treat everything as an object you snake charmin' son of a gun. The era for your type is over in so many ways, but you're lucky this language is in vogue and only getting better.</p>
-      </div>
-    </div>
-    <div id="ruby" class="hidden">
-      <div class="box">
-        <h2>YOUR PERFECT PROGRAMMING LANGUAGE</h2>
-        <h1>Ruby</h1>
-        <p>The sparkly things catch your eye, and rightfully so, this language is perfect for getting started in the beautiful world of learning to write software.</p>
-      </div>
-    </div>
-    <div id="rust" class="hidden">
-      <div class="box">
-        <h2>YOUR PERFECT PROGRAMMING LANGUAGE</h2>
-        <h1>Rust</h1>
-        <p>Performance is all you care about, and surely what you'll be mastering with this language.</p>
+          <h2> QUESTION 4</h2>
+          <div class="form-check">
+            <label for="cuddlier"><h4>Which is cuddlier? Birds or snakes?</h4></label>
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" id="cuddlier" type="radio"   name="cuddle" value="10" checked>
+              <label class="custom-control-label" for="cuddlier">Boids for sure</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" id="customRadio4" type="radio" name="cuddle" value="1">
+              <label class="custom-control-label" for="customRadio4">Thhhhnakes definitely</label><br>
+            </div>
+          </div>
+          <h2> QUESTION 5</h2>
+          <div class="form-check">
+            <label for="beverage"><h4>Coffee or tea?</h4></label>
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" id="coffee" type="radio" name="bev"  type="radio" value="10" checked>
+              <label class="custom-control-label" for="coffee">COFFEE MUST HAVE</label>
+              </div>
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" id="tea" type="radio" name="bev" type="radio" value="1">
+              <label class="custom-control-label" for="tea">ah yes, tea is delightful</label><br>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Show me what language is best for me</button>
+        </form>
       </div>  
-    </div>
-    <div id="no-language" class="hidden">
-      <div class="box">
-        <h1>That's not a language... </h1>
-        <p>This is a language!</p>
+      <div id="python" class="hidden">
+        <div class="box"> 
+          <h2>YOUR PERFECT PROGRAMMING LANGUAGE</h2>
+          <h1>Python</h1>
+          <p>You treat everything as an object you snake charmin' son of a gun. The era for your type is over in so many ways, but you're lucky this language is in vogue and only getting better.</p>
+        </div>
+      </div>
+      <div id="ruby" class="hidden">
+        <div class="box">
+          <h2>YOUR PERFECT PROGRAMMING LANGUAGE</h2>
+          <h1>Ruby</h1>
+          <p>The sparkly things catch your eye, and rightfully so, this language is perfect for getting started in the beautiful world of learning to write software.</p>
+        </div>
+      </div>
+      <div id="rust" class="hidden">
+        <div class="box">
+          <h2>YOUR PERFECT PROGRAMMING LANGUAGE</h2>
+          <h1>Rust</h1>
+          <p>Performance is all you care about, and surely what you'll be mastering with this language.</p>
+        </div>  
+      </div>
+      <div id="no-language" class="hidden">
+        <div class="box">
+          <h1>That's not a language... </h1>
+          <p>This is a language!</p>
+        </div>
       </div>
     </div>
-    <!-- </div> -->
-  <!-- </div> -->
-</body>
+  </body>
 </html>
-
-<!-- Next Steps:
-Get the form to reset properly  -->
