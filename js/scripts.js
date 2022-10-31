@@ -1,11 +1,12 @@
 
 //function to hide the divs
 function setToHidden(){
-  document.getElementById("years").setAttribute("class", "hidden");
-  document.getElementById("pet-weight").setAttribute("class", "hidden");
-  document.getElementById("miracles").setAttribute("class", "hidden");
-  document.getElementById("cuddlier").setAttribute("class", "hidden");
-  document.getElementById("coffee").setAttribute("class", "hidden");
+
+  document.getElementById("python").setAttribute("class", "hidden");
+  document.getElementById("ruby").setAttribute("class", "hidden");
+  document.getElementById("rust").setAttribute("class", "hidden");
+  document.getElementById("no-language").setAttribute("class", "hidden");
+  // document.getElementById("results").setAttribute("class", "hidden");
 }
 function whatsYourLanguage(){
   //establish variables for the values of each input
